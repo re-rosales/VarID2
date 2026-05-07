@@ -29,7 +29,7 @@ d <- inputdata.10x$`Gene Expression`
 #Import cell data
 #Download input data from: 10x Genomics,
 #https://support.10xgenomics.com/single-cell-gene-expression/datasets/3.0.0/pbmc_10k_v3
-d2 <- Seurat::Read10X_h5("/data/gruen/group/rosales/ATACseq/pbmc_10k_v3_filtered_feature_bc_matrix.h5")
+d2 <- Seurat::Read10X_h5("/path_to_data/pbmc_10k_v3_filtered_feature_bc_matrix.h5")
 
 #Comparison of UMI counts and number of detected features per cell barcode
 quanL <-list(NucUMIs = colSums(d), CellUMIs = colSums(d2),
